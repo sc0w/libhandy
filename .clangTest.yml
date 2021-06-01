@@ -67,6 +67,7 @@ requires:
     - wx3.0-i18n
     - zlib1g-dev
     - libgladeui-dev
+    - gobject-introspection
 
 variables:
 #  - CPPFLAGS="-Wall -Woverloaded-virtual -Wextra -Wshadow -Wformat-nonliteral -Werror=format-security -Wpointer-arith -Wcast-align -Wmissing-declarations -Wredundant-decls"
