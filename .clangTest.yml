@@ -69,6 +69,7 @@ requires:
     - libgladeui-dev
     - gobject-introspection
     - libgirepository1.0-dev
+    - valac
 
 variables:
 #  - CPPFLAGS="-Wall -Woverloaded-virtual -Wextra -Wshadow -Wformat-nonliteral -Werror=format-security -Wpointer-arith -Wcast-align -Wmissing-declarations -Wredundant-decls"
