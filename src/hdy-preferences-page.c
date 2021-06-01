@@ -46,11 +46,6 @@ enum {
 
 static GParamSpec *props[LAST_PROP];
 
-typedef struct {
-  GtkCallback callback;
-  gpointer data;
-} CallbackData;
-
 static void
 hdy_preferences_page_get_property (GObject    *object,
                                    guint       prop_id,
