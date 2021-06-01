@@ -66,6 +66,7 @@ requires:
     - upower
     - wx3.0-i18n
     - zlib1g-dev
+    - libgladeui-dev
 
 variables:
 #  - CPPFLAGS="-Wall -Woverloaded-virtual -Wextra -Wshadow -Wformat-nonliteral -Werror=format-security -Wpointer-arith -Wcast-align -Wmissing-declarations -Wredundant-decls"
@@ -91,10 +92,10 @@ build_scripts:
 #  - mkdir ../clang
 #  - cp -dpR . ../clang
 #  - cd ../clang
-  - scan-build $CHECKERS --keep-cc -o phosh_clang_htmlreport meson . _build
-  - scan-build $CHECKERS --keep-cc -o phosh_clang_htmlreport ninja -C _build
-  - tar -zcf phosh_clang_htmlreport.tar.gz phosh_clang_htmlreport
-  - curl -F file=@phosh_clang_htmlreport.tar.gz -F expires=6m -F no_index=true https://api.anonymousfiles.io/ && echo
+  - scan-build $CHECKERS --keep-cc -o libhandy_clang_htmlreport meson . _build
+  - scan-build $CHECKERS --keep-cc -o libhandy_clang_htmlreport ninja -C _build
+  - tar -zcf libhandy_clang_htmlreport.tar.gz libhandy_clang_htmlreport
+  - curl -F file=@libhandy_clang_htmlreport.tar.gz -F expires=6m -F no_index=true https://api.anonymousfiles.io/ && echo
 #  - cd ../rootdir
 
 after_scripts:
